@@ -116,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #header {
   padding: 20px 0;
   height: 84px;
@@ -145,6 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo img {
+  width: 10vw; /* 10% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
   padding: 0;
   margin: 0;
 }
@@ -154,11 +159,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     height: 74px;
   }
+
   #header #logo h1 {
     font-size: 34px;
   }
+
   #header #logo img {
-    max-height: 40px;
+    width: 15vw; /* Slightly larger for smaller screens */
   }
 }
 
