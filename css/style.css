@@ -662,11 +662,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Our Portfolio Section
 --------------------------------*/
 /* Portfolio Section
---------------------------------*/
-/* Portfolio Section
---------------------------------*/
+/* Portfolio Section */
 #portfolio {
   padding: 30px 0 0 0;
+}
+
+#portfolio .container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 #portfolio .box {
@@ -675,7 +678,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
   transition: 0.4s;
-  overflow: hidden; /* Prevents content overflow */
 }
 
 #portfolio .box:hover {
@@ -685,31 +687,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transform: translateY(-10px);
 }
 
-#portfolio .box .image {
+#portfolio .box .icon {
   float: left;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 10px;
 }
 
-#portfolio .box .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures image doesn't stretch */
+#portfolio .box .icon i {
+  color: #444;
+  font-size: 64px;
   transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
 }
 
-#portfolio .box .image img:hover {
-  transform: scale(1.1);
+#portfolio .box .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #portfolio .box h4 {
-  margin-left: 120px;
+  margin-left: 100px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 22px;
-  overflow-wrap: break-word; /* Prevents long text overflow */
 }
 
 #portfolio .box h4 a {
@@ -718,24 +720,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .box p {
   font-size: 14px;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
-  overflow-wrap: break-word; /* Prevents text from overflowing */
 }
 
 @media (max-width: 767px) {
   #portfolio .box {
     margin-bottom: 20px;
   }
-  #portfolio .box .image {
+  #portfolio .box .icon {
     float: none;
     text-align: center;
-    display: block;
-    margin: 0 auto 15px;
+    padding-bottom: 15px;
   }
-  #portfolio .box h4,
-  #portfolio .box p {
+  #portfolio .box h4, #portfolio .box p {
     margin-left: 0;
     text-align: center;
   }
