@@ -662,14 +662,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Our Portfolio Section
 --------------------------------*/
 /* Portfolio Section
-/* Portfolio Section */
 #portfolio {
   padding: 30px 0 0 0;
-}
-
-#portfolio .container {
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
 #portfolio .box {
@@ -726,7 +720,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
-  #portfolio .box {
+  #portfolio .box .box {
     margin-bottom: 20px;
   }
   #portfolio .box .icon {
@@ -739,6 +733,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
 }
+
 
 /* Testimonials Section
 --------------------------------*/
