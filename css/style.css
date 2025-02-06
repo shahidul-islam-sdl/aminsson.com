@@ -729,7 +729,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: url('/img/baner.jpg') no-repeat center center;
+  background: url('https://github.com/shahidul-islam-sdl/website/blob/main/img%2Fbaner.jpg') no-repeat center center;
   background-size: 75%;
   padding: 100px 0; /* Adjust padding as needed */
   color: white; /* Adjust text color if necessary */
